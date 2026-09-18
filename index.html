@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#e30613">
 <link rel="manifest" href="manifest.json">
-<title>Form Pembayaran K2</title>
+<title>Pembayaran Invoice</title>
 <style>
 *{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#17212b}
 header{background:#e30613;color:#fff;padding:14px 16px;position:sticky;top:0;z-index:10;border-bottom:5px solid #ffd500}
@@ -27,7 +27,7 @@ label{font-size:15px;color:#586674;font-weight:700;display:block;white-space:nor
 </style>
 </head>
 <body>
-<header><h1>Form Pembayaran — K2</h1><small id="vendorHeader"></small></header>
+<header><h1>Invoice</h1><small id="vendorHeader"></small></header>
 <main>
 <section class="card">
 <h2>Data Proyek</h2>
@@ -41,7 +41,7 @@ label{font-size:15px;color:#586674;font-weight:700;display:block;white-space:nor
 <div><label>Jatuh Tempo</label><input id="dueDate" type="date"></div>
 <div><label>Harga / Nilai Kontrak</label><input id="contract" class="money" type="text" inputmode="numeric"></div>
 <div><label>Pek. Kurang</label><input id="less" class="money" type="text" inputmode="numeric"></div>
-<div><label>Retur / Retensi Maksimal</label><input value="5%" readonly style="text-align:right"></div>
+<div><label>Retensi</label><input value="5%" readonly style="text-align:right"></div>
 </div>
 </section>
 
@@ -61,7 +61,7 @@ label{font-size:15px;color:#586674;font-weight:700;display:block;white-space:nor
 <option value="with">Dengan DP</option>
 <option value="without">Tanpa DP</option>
 </select></div>
-<div><label>Retur</label><select id="returMode" onchange="setReturMode(this.value)">
+<div><label>Retensi</label><select id="returMode" onchange="setReturMode(this.value)">
 <option value="1">1× — 5%</option>
 <option value="2">2× — 2,5% + 2,5%</option>
 </select></div>
